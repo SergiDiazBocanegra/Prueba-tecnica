@@ -1,4 +1,4 @@
-package org.prueba.controller;
+package org.prueba.utils;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -19,6 +19,7 @@ public class ErrorMessage {
 
     //No estoy utilizando la clase, pero se podría usar en el controlador para controlar los errores aquí
     //El en update del controlador tengo comentada la linea de como se haría, se puede cambiar por la otra
+
     public static String formatMessage(BindingResult result) {
         List<Map<String, String>> errors = result.getFieldErrors().stream()
                 .map(err -> {

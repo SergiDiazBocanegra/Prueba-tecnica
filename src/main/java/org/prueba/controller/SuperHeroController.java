@@ -1,21 +1,14 @@
 package org.prueba.controller;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.prueba.entity.SuperHero;
 import org.prueba.service.SuperHeroService;
+import org.prueba.utils.LogExecutionTime;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.server.ResponseStatusException;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping(value = "/superheroes")
@@ -24,6 +17,7 @@ public class SuperHeroController {
     @Autowired
     SuperHeroService superHeroService;
 
+    @LogExecutionTime
     @GetMapping
     public ResponseEntity<List<SuperHero>> getAllSuperHeroes() {
         List<SuperHero> superHeroes = new ArrayList<>();
@@ -34,6 +28,7 @@ public class SuperHeroController {
         return ResponseEntity.ok(superHeroes);
     }
 
+    @LogExecutionTime
     @GetMapping(value = "/{id}")
     public ResponseEntity<SuperHero> getSuperHeroByID(@PathVariable("id") Long id) {
         SuperHero superHero = superHeroService.getSuperHero(id);
@@ -43,6 +38,8 @@ public class SuperHeroController {
         return ResponseEntity.ok(superHero);
     }
 
+
+    @LogExecutionTime
     @GetMapping(value = "/getByName")
     public ResponseEntity<List<SuperHero>> getByName(@RequestParam(name = "name", required = true) String name) {
         List<SuperHero> superHeroes = new ArrayList<>();
@@ -53,7 +50,7 @@ public class SuperHeroController {
         return ResponseEntity.ok(superHeroes);
     }
 
-
+    @LogExecutionTime
     @PutMapping(value = "/{id}")
     public ResponseEntity<SuperHero> createSuperHero(@PathVariable("id") Long id, @RequestBody SuperHero superHero) {
         superHero.setId(id);
@@ -65,6 +62,7 @@ public class SuperHeroController {
         return ResponseEntity.ok(superHeroDB);
     }
 
+    @LogExecutionTime
     @DeleteMapping(value = "/{id}")
     public ResponseEntity<SuperHero> deleteSuperHero(@PathVariable("id") Long id){
         SuperHero superHeroDelete = superHeroService.deleteSuperHero(id);
