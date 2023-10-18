@@ -1,4 +1,7 @@
+import org.aspectj.lang.annotation.After;
 import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.prueba.SuperHeroesApplication;
 import org.prueba.entity.SuperHero;
@@ -13,6 +16,16 @@ public class SuperHeroesApplicationTest {
 
     @Autowired
     private SuperHeroService superHeroService;
+
+    @BeforeEach
+    public void restoreInformation(){
+        SuperHero spiderman=new SuperHero(1L,"Spiderman", "Description","Male","Spider","CREATED");
+        SuperHero wonderWoman=new SuperHero(2L,"Wonder Woman", "Description","Female","Woman","CREATED");
+        superHeroService.deleteSuperHero(1L);
+        superHeroService.deleteSuperHero(2L);
+        superHeroService.save(spiderman);
+        superHeroService.save(wonderWoman);
+    }
 
     @Test
     public void whenValidGetId_ThenReturnSuperHero(){
@@ -33,12 +46,18 @@ public class SuperHeroesApplicationTest {
     }
 
     @Test
-    public void whenUpdateSuperHero_ThenReturnUpdatedSuperHero(){
-        SuperHero superHero=new SuperHero(1L,"Wonder Woman", "Description","Female","Woman");
+    public void whenUpdate_ThenReturnUpdatedSuperHero(){
+        SuperHero superHero=new SuperHero(1L,"Wonder Woman", "Description","Female","Woman","UPDATED");
         SuperHero superHeroUpdated=superHeroService.updateSuperHero(superHero);
-        superHeroService.getByName("spi");
-        Assertions.assertThat(superHeroUpdated.getName()).isEqualTo("Wonder Woman");
+        Assertions.assertThat(superHeroUpdated.getStatus()).isEqualTo("UPDATED");
     }
+
+    @Test
+    public void whenDeleteByID_ThenReturnDeletedSuperHero(){
+        SuperHero found= superHeroService.deleteSuperHero(1L);
+        Assertions.assertThat(found.getStatus()).isEqualTo("DELETED");
+    }
+
 
 
 

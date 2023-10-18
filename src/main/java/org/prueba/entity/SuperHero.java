@@ -22,4 +22,6 @@ public class SuperHero {
     private String gender;
 
     private String skill;
+
+    private String status;
 }

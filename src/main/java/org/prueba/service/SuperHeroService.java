@@ -16,5 +16,5 @@ public interface SuperHeroService {
 
     public SuperHero deleteSuperHero(Long id);
 
-
+    public SuperHero save(SuperHero superHero);
 }

@@ -37,6 +37,7 @@ public class SuperHeroServiceImpl implements SuperHeroService{
         superHeroDB.setDescription(superHero.getDescription());
         superHeroDB.setGender(superHero.getGender());
         superHeroDB.setSkill(superHero.getSkill());
+        superHeroDB.setStatus("UPDATED");
         return superHeroReposity.save(superHeroDB);
     }
 
@@ -46,7 +47,12 @@ public class SuperHeroServiceImpl implements SuperHeroService{
         if(null == superHero){
             return null;
         }
-        //continuar, añadir un campo de status a superhero
-        return null;
+        superHero.setStatus("DELETED");
+        return superHeroReposity.save(superHero);
+    }
+
+    @Override
+    public SuperHero save(SuperHero superHero) {
+        return superHeroReposity.save(superHero);
     }
 }
