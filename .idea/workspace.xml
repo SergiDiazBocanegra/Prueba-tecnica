@@ -23,12 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1d83f9b-36d3-4dc9-9625-6c361e146f66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/IntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/prueba/SuperHeroesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prueba/SuperHeroesApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prueba/controller/ErrorMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prueba/utils/ErrorMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prueba/controller/SuperHeroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prueba/controller/SuperHeroController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,9 +70,12 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.SuperHeroesApplication">
+  <component name="RunManager" selected="JUnit.IntegrationTest.whenGetSuperHeroes_thenStatus200">
     <configuration name="SuperHeroesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true" show_console_on_std_err="true" show_console_on_std_out="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="org.prueba.SuperHeroesApplication" />
+      <module name="demo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.prueba.*" />
@@ -83,30 +86,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SuperHeroesApplicationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SuperHeroesApplicationTest" />
+      <option name="MAIN_CLASS_NAME" value="IntegrationTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SuperHeroesApplicationTest.whenDeleteByID_ThenReturnDeletedSuperHero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IntegrationTest.testEndPoint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SuperHeroesApplicationTest" />
-      <option name="METHOD_NAME" value="whenDeleteByID_ThenReturnDeletedSuperHero" />
+      <option name="MAIN_CLASS_NAME" value="IntegrationTest" />
+      <option name="METHOD_NAME" value="testEndPoint" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SuperHeroesApplicationTest.whenUpdate_ThenReturnUpdatedSuperHero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IntegrationTest.whenGetSuperHeroes_thenStatus200" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="IntegrationTest" />
+      <option name="METHOD_NAME" value="whenGetSuperHeroes_thenStatus200" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuperHeroesApplicationTest.whenGetSuperHeroes_thenStatus200" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SuperHeroesApplicationTest" />
-      <option name="METHOD_NAME" value="whenUpdate_ThenReturnUpdatedSuperHero" />
+      <option name="METHOD_NAME" value="whenGetSuperHeroes_thenStatus200" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -114,10 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IntegrationTest.whenGetSuperHeroes_thenStatus200" />
+        <item itemvalue="JUnit.IntegrationTest" />
         <item itemvalue="Application.SuperHeroesApplication" />
-        <item itemvalue="JUnit.SuperHeroesApplicationTest" />
-        <item itemvalue="JUnit.SuperHeroesApplicationTest.whenUpdate_ThenReturnUpdatedSuperHero" />
-        <item itemvalue="JUnit.SuperHeroesApplicationTest.whenDeleteByID_ThenReturnDeletedSuperHero" />
+        <item itemvalue="JUnit.SuperHeroesApplicationTest.whenGetSuperHeroes_thenStatus200" />
+        <item itemvalue="JUnit.IntegrationTest.testEndPoint" />
       </list>
     </recent_temporary>
   </component>
@@ -142,65 +156,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="690" y="274" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1697649898188">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="274" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1697649898188" />
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1697643275182">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1697643275182" />
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1697650801403">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1697650801403" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1697641639200">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1697641639200" />
-    <state width="1877" height="277" key="GridCell.Tab.0.bottom" timestamp="1697651857110">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1697651857110" />
-    <state width="1877" height="277" key="GridCell.Tab.0.center" timestamp="1697651857110">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1697651857110" />
-    <state width="1877" height="277" key="GridCell.Tab.0.left" timestamp="1697651857109">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1697651857109" />
-    <state width="1877" height="277" key="GridCell.Tab.0.right" timestamp="1697651857110">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1697651857110" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1697650830580">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1697650830580" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1697650830580">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1697650830580" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1697650830580">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1697650830580" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1697650830580">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1697650830580" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1697642285932">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1697642285932" />
-    <state x="685" y="481" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1697641822161">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="685" y="481" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040@0.0.1920.1040" timestamp="1697641822161" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
