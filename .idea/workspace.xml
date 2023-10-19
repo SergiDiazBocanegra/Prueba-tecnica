@@ -23,12 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1d83f9b-36d3-4dc9-9625-6c361e146f66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/prueba/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/prueba/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/prueba/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/IntegrationApplicationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prueba/controller/SuperHeroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prueba/controller/SuperHeroController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/IntegrationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SuperHeroesApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SuperHeroesApplicationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,68 +70,62 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.SuperHeroesApplication">
-    <configuration name="SuperHeroesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true" show_console_on_std_err="true" show_console_on_std_out="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="11" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="org.prueba.SuperHeroesApplication" />
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.prueba.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SuperHeroesApplicationTest">
+    <configuration name="IntegrationApplicationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="IntegrationTest" />
+      <option name="MAIN_CLASS_NAME" value="IntegrationApplicationTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IntegrationTest.testEndPoint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IntegrationApplicationTest.testAuthenticateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="IntegrationTest" />
-      <option name="METHOD_NAME" value="testEndPoint" />
+      <option name="MAIN_CLASS_NAME" value="IntegrationApplicationTest" />
+      <option name="METHOD_NAME" value="testAuthenticateUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IntegrationTest.whenGetSuperHeroes_thenStatus200" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IntegrationApplicationTest.testRetrieveStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="IntegrationTest" />
-      <option name="METHOD_NAME" value="whenGetSuperHeroes_thenStatus200" />
+      <option name="MAIN_CLASS_NAME" value="IntegrationApplicationTest" />
+      <option name="METHOD_NAME" value="testRetrieveStudent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SuperHeroesApplicationTest.whenGetSuperHeroes_thenStatus200" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IntegrationApplicationTest.testRetrieveSuperHeroes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="IntegrationApplicationTest" />
+      <option name="METHOD_NAME" value="testRetrieveSuperHeroes" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuperHeroesApplicationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SuperHeroesApplicationTest" />
-      <option name="METHOD_NAME" value="whenGetSuperHeroes_thenStatus200" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SuperHeroesApplication" />
-        <item itemvalue="JUnit.IntegrationTest.whenGetSuperHeroes_thenStatus200" />
-        <item itemvalue="JUnit.IntegrationTest" />
-        <item itemvalue="JUnit.SuperHeroesApplicationTest.whenGetSuperHeroes_thenStatus200" />
-        <item itemvalue="JUnit.IntegrationTest.testEndPoint" />
+        <item itemvalue="JUnit.SuperHeroesApplicationTest" />
+        <item itemvalue="JUnit.IntegrationApplicationTest" />
+        <item itemvalue="JUnit.IntegrationApplicationTest.testAuthenticateUser" />
+        <item itemvalue="JUnit.IntegrationApplicationTest.testRetrieveSuperHeroes" />
+        <item itemvalue="JUnit.IntegrationApplicationTest.testRetrieveStudent" />
       </list>
     </recent_temporary>
   </component>
@@ -156,12 +150,59 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1697747866309">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1697747866309" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1697747866309">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1697747866309" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1697747866308">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1697747866308" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1697747866309">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1697747866309" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1697747866135">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1697747866135" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1697747866134">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1697747866134" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1697747866134">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1697747866134" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1697747866135">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1697747866135" />
+    <state x="565" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1697746269205">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="565" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1697746269205" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="superHeroUpdated.getName()" language="JAVA" />
         <watch expression="Assertions.assertThat(superHeroUpdated.getName()).isEqualTo(&quot;Wonder Woman&quot;);" language="JAVA" />
+        <watch expression="restTemplate.exchange(createURLWithPort(&quot;/superheroes&quot;), HttpMethod.GET, entity, String.class);" language="JAVA" />
+        <watch expression="restTemplate.exchange(createURLWithPort(&quot;/user&quot;),HttpMethod.POST,entity,User.class,params)" language="JAVA" />
+        <watch expression="restTemplate.exchange(createURLWithPort(&quot;/user&quot;), HttpMethod.POST, entity, String.class,params);" language="JAVA" />
+        <watch expression="restTemplate.exchange(createURLWithPort(&quot;/user?user=Sergi&amp;password=1234&quot;), HttpMethod.POST, entity, String.class);" language="JAVA" />
+        <watch expression="restTemplate.exchange(createURLWithPort(&quot;/user?user=Sergi&amp;password=1234&quot;), HttpMethod.POST, entity, String.class).body" language="JAVA" />
+        <watch expression="response.getBody()" language="JAVA" />
+        <watch expression="user" language="JAVA" />
+        <watch expression="restTemplate.exchange(createURLWithPort(&quot;/superheroes/1&quot;), HttpMethod.PUT, entity, String.class);" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

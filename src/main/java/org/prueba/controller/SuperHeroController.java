@@ -52,7 +52,7 @@ public class SuperHeroController {
 
     @LogExecutionTime
     @PutMapping(value = "/{id}")
-    public ResponseEntity<SuperHero> createSuperHero(@PathVariable("id") Long id, @RequestBody SuperHero superHero) {
+    public ResponseEntity<SuperHero> updateSuperHero(@PathVariable("id") Long id, SuperHero superHero) {
         superHero.setId(id);
         SuperHero superHeroDB =  superHeroService.updateSuperHero(superHero);
         if (superHeroDB == null){
