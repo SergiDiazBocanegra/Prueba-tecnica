@@ -17,7 +17,7 @@ Esto devuelve un token que luego se tiene utilizar para realizar las demás peti
 
 ## _Base de datos_
 
-Se encuentra en la carpeta resources, he creado el script para que se inserten dos superhéroes al iniciar el servidor y poder trabajar y probar las peticiones.
+H2 Database: Se encuentra en la carpeta resources, he creado el script para que se inserten dos superhéroes al iniciar el servidor y poder trabajar y probar las peticiones.
 
 ## _Puntos opcionales_
 - Se han utilizado los principios SOLID y TDD.
@@ -25,6 +25,8 @@ Se encuentra en la carpeta resources, he creado el script para que se inserten d
 - Manejo de errores 
 - Anotación para obtener el tiempo que tarda cada método en ejecutarse
 - JWT y Spring Security para seguridad de la API
+- Tests unitarios y de integración
+- Se puede dockerizar fácilmente creando el jar del proyecto y creando un container
 
 ## _Dependencias de Maven_
 - spring-boot-starter-data-jpa
@@ -37,4 +39,4 @@ Se encuentra en la carpeta resources, he creado el script para que se inserten d
 - spring-boot-starter-security
 - spring-boot-starter-aop
 - spring-boot-starter-tomcat
-  
+
