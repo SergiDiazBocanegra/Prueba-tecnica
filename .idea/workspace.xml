@@ -23,14 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1d83f9b-36d3-4dc9-9625-6c361e146f66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/prueba/config/CacheConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/prueba/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/prueba/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/prueba/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prueba/controller/SuperHeroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prueba/controller/SuperHeroController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prueba/service/SuperHeroServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prueba/service/SuperHeroServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prueba/utils/ErrorMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prueba/config/ErrorMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prueba/utils/ExecutionTimeLoggingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prueba/config/ExecutionTimeLoggingAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prueba/utils/LogExecutionTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prueba/config/LogExecutionTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
