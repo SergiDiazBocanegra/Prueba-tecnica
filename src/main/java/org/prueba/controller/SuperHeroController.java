@@ -8,6 +8,7 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.persistence.EntityNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,7 +25,7 @@ public class SuperHeroController {
         List<SuperHero> superHeroes = new ArrayList<>();
         superHeroes = superHeroService.getAll();
         if (superHeroes.isEmpty()) {
-            return ResponseEntity.notFound().build();
+            return ResponseEntity.noContent().build();
         }
         return ResponseEntity.ok(superHeroes);
     }
@@ -35,7 +36,7 @@ public class SuperHeroController {
     public ResponseEntity<SuperHero> getSuperHeroByID(@PathVariable("id") Long id) {
         SuperHero superHero = superHeroService.getSuperHero(id);
         if (null == superHero) {
-            return ResponseEntity.notFound().build();
+            throw new EntityNotFoundException();
         }
         return ResponseEntity.ok(superHero);
     }
@@ -47,7 +48,7 @@ public class SuperHeroController {
         List<SuperHero> superHeroes = new ArrayList<>();
         superHeroes = superHeroService.getByName(name);
         if (superHeroes.isEmpty()) {
-            return ResponseEntity.notFound().build();
+            throw new EntityNotFoundException();
         }
         return ResponseEntity.ok(superHeroes);
     }
@@ -58,8 +59,7 @@ public class SuperHeroController {
         superHero.setId(id);
         SuperHero superHeroDB =  superHeroService.updateSuperHero(superHero);
         if (superHeroDB == null){
-            //throw new ResponseStatusException(HttpStatus.BAD_REQUEST, ErrorMessage.formatMessage(result));
-            return ResponseEntity.notFound().build();
+            throw new EntityNotFoundException();
         }
         return ResponseEntity.ok(superHeroDB);
     }
@@ -69,7 +69,7 @@ public class SuperHeroController {
     public ResponseEntity<SuperHero> deleteSuperHero(@PathVariable("id") Long id){
         SuperHero superHeroDelete = superHeroService.deleteSuperHero(id);
         if (superHeroDelete == null){
-            return ResponseEntity.notFound().build();
+            throw new EntityNotFoundException();
         }
         return ResponseEntity.ok(superHeroDelete);
     }
