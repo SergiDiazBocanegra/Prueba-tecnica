@@ -1,4 +1,4 @@
-package org.prueba.utils;
+package org.prueba.config;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;

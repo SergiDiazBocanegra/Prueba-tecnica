@@ -2,7 +2,7 @@ package org.prueba.controller;
 
 import org.prueba.entity.SuperHero;
 import org.prueba.service.SuperHeroService;
-import org.prueba.utils.LogExecutionTime;
+import org.prueba.config.LogExecutionTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

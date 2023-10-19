@@ -3,6 +3,7 @@ package org.prueba.service;
 import org.prueba.entity.SuperHero;
 import org.prueba.repository.SuperHeroReposity;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -18,6 +19,7 @@ public class SuperHeroServiceImpl implements SuperHeroService{
     }
 
     @Override
+    @Cacheable("superheroes")
     public List<SuperHero> getAll() {
         return superHeroReposity.findAll();
     }

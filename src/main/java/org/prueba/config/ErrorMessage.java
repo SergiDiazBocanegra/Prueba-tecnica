@@ -1,4 +1,4 @@
-package org.prueba.utils;
+package org.prueba.config;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

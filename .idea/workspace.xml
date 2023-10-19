@@ -23,12 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1d83f9b-36d3-4dc9-9625-6c361e146f66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/IntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/prueba/config/CacheConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/prueba/SuperHeroesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prueba/SuperHeroesApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prueba/controller/SuperHeroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prueba/controller/SuperHeroController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prueba/service/SuperHeroServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prueba/service/SuperHeroServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prueba/utils/ErrorMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prueba/config/ErrorMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prueba/utils/ExecutionTimeLoggingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prueba/config/ExecutionTimeLoggingAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/prueba/utils/LogExecutionTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/prueba/config/LogExecutionTime.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +72,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="JUnit.IntegrationTest.whenGetSuperHeroes_thenStatus200">
+  <component name="RunManager" selected="Application.SuperHeroesApplication">
     <configuration name="SuperHeroesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true" show_console_on_std_err="true" show_console_on_std_out="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -127,9 +129,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SuperHeroesApplication" />
         <item itemvalue="JUnit.IntegrationTest.whenGetSuperHeroes_thenStatus200" />
         <item itemvalue="JUnit.IntegrationTest" />
-        <item itemvalue="Application.SuperHeroesApplication" />
         <item itemvalue="JUnit.SuperHeroesApplicationTest.whenGetSuperHeroes_thenStatus200" />
         <item itemvalue="JUnit.IntegrationTest.testEndPoint" />
       </list>
