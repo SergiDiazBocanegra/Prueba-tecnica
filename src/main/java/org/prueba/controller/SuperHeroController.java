@@ -4,6 +4,7 @@ import org.prueba.entity.SuperHero;
 import org.prueba.service.SuperHeroService;
 import org.prueba.config.LogExecutionTime;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -30,6 +31,7 @@ public class SuperHeroController {
 
     @LogExecutionTime
     @GetMapping(value = "/{id}")
+    @Cacheable("superhero")
     public ResponseEntity<SuperHero> getSuperHeroByID(@PathVariable("id") Long id) {
         SuperHero superHero = superHeroService.getSuperHero(id);
         if (null == superHero) {
