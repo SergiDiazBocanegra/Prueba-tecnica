@@ -32,7 +32,7 @@ public class SuperHeroController {
 
     @LogExecutionTime
     @GetMapping(value = "/{id}")
-    @Cacheable("superhero")
+//    @Cacheable("superhero")
     public ResponseEntity<SuperHero> getSuperHeroByID(@PathVariable("id") Long id) {
         SuperHero superHero = superHeroService.getSuperHero(id);
         if (null == superHero) {
