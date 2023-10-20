@@ -22,11 +22,14 @@ H2 Database: Se encuentra en la carpeta resources, he creado el script para que 
 ## _Puntos opcionales_
 - Se han utilizado los principios SOLID y TDD.
 - Cache
-- Manejo de errores 
+- Manejo de errores centralizado en GlobalExceptionHandler
 - Anotación para obtener el tiempo que tarda cada método en ejecutarse
 - JWT y Spring Security para seguridad de la API
 - Tests unitarios y de integración
-- Se puede dockerizar fácilmente creando el jar del proyecto y creando un container
+- Para hacer el build y ejecutar la versión dockerizada he utilizado los comandos:
+  sudo docker build -t spring-boot-docker . y sudo docker run -p 8080:8080 spring-boot-docker:latest
+  La he subido a Docker Hub, se puede consultar en el siguiente enlace:
+  https://hub.docker.com/repository/docker/sergidiazbocanegra/spring-boot-docker/general
 
 ## _Dependencias de Maven_
 - spring-boot-starter-data-jpa
